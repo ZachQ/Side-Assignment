@@ -11,3 +11,100 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header {
+  position: sticky;
+  top: 0;
+  background: #373342;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+  z-index: 1000;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.panel-container {
+  display: flex;
+}
+
+.house-tile {
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+}
+
+.house-price {
+  font-family: Open Sans;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.house-address {
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 47px;
+  height: 47px;
+}
+
+.map-toggle-button {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #CE87C1;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 127px;
+  height: 55px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  border: none;
+  box-shadow: none;
+  opacity: 0px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;  
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .map-toggle-button {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .properties-panel {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .house-tile {
+    width: calc(50% - 20px);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
